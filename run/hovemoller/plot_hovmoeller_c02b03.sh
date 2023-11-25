@@ -56,7 +56,7 @@ for (( i=0 ; i < $(( ${#simulations[@]} / $nparams )) ; i++ )); do
 
     IFS='-' read -ra sim_names <<< "$sim_names"
 
-    cmd="python3 plot_code/plot_hovmoeller.py      \
+    cmd="python3 ../../src/plot_hovmoeller.py      \
         --archive-root $archive_root   \
         --date-rng $beg_date $end_date \
         --skip-hrs $skip_hrs           \
